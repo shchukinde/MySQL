@@ -1,0 +1,2 @@
+-- Основные индексы созданы, поэтому создам индекс, который помог бы быстрее выполняться процедуре `set_bet_status` и триггеру, который её использует
+CREATE INDEX bets_userid_eventid_idx ON bets (user_id, event_id);
